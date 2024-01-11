@@ -9,7 +9,11 @@ int main()
     cout << a << endl;
     cout << b << endl; // this will print in 0 1 format
 
-    cout << boolalpha << a << endl;
-    cout << boolalpha << b << endl; // this will print in false true format
+    cout << a << endl;
+    cout << b << endl;
+
+    cout << boolalpha; // this will print in true fasle format from now on
+    cout << a << endl;
+    cout << b << endl;
     return 0;
 }
