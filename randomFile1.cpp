@@ -4,9 +4,7 @@ using namespace std;
 
 int main()
 {
-    char name;
-    cout << "Enter your name : ";
-    cin >> name;
-    cout << name << endl;
+    char arr1[] = {"qwerty"};
+    cout << arr1 << endl;
     return 0;
 }
