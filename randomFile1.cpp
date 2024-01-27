@@ -4,15 +4,11 @@ using namespace std;
 
 int main()
 {
-    int a;
-    try
-    {
-        a/0;
-    }
-    catch(const std::exception& e)
-    {
-        cout << "ERROR" << e.what() << endl;
-    }
-        
+    int a = 10;
+    int *ptr1 = new int(a);
+    cout << ptr1 << endl;
+    cout << *ptr1 << endl;
+    delete ptr1;
+    ptr1 = nullptr;
     return 0;
 }
