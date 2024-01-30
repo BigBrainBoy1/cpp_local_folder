@@ -1,0 +1,39 @@
+.yellow {
+    background-color: rgb(255, 255, 0);
+}
+
+#green {
+    background-color: green;
+}
+
+.box {
+    background-color: aquamarine;
+}
+
+.box1 {
+    color: blueviolet;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    height: 100px;
+    box-sizing: border-box;
+}
+
+.box2 {
+    color: brown;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid rgb(12, 34, 158);
+    height: 100px;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    @import url("https://fonts.googleapis.com/css2?family=Single+Day&display=swap");
+    font-family: 'Single Day', cursive;
+}
