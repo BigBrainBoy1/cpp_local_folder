@@ -4,10 +4,7 @@ using namespace std;
 
 int main()
 {
-    int a = 10;
-    int b = 20;
-    int &referenceTo_a = a;
-    referenceTo_a = b;
-    cout << a << endl;
+    int arr1[5];
+    cout << sizeof(arr1) << endl;
     return 0;
 }
