@@ -2,7 +2,7 @@
 
 # Q1 (a)
 listOfAges = [] # initializing an empty list
-for i in range (10):
+for i in range (10): # running the loop 10 times
     print("Enter age of student ", i+1)
     x = int(input()) # taking input of age
     listOfAges.append(x) # storing age in the list
