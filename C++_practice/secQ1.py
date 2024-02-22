@@ -1,5 +1,3 @@
-# Jiheershu     MAT/22/66       Bsc.(H) Mathematics
-
 # Q1 (a)
 listOfAges = [] # initializing an empty list
 for i in range (10): # running the loop 10 times
@@ -9,7 +7,7 @@ for i in range (10): # running the loop 10 times
 sumOfAges = 0
 for i in range(10):
     sumOfAges += listOfAges[i] # calculating the sum of ages to calculate average age
-avgAge = ((sumOfAges)/10) # calculating average age
+avgAge = ((float(sumOfAges))/10.0) # calculating average age
 print("Average age among ", listOfAges, " is ", avgAge) # printing average age
 
 # Q1 (b)
