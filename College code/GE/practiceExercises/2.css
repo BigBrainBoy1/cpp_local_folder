@@ -1,0 +1,33 @@
+body {
+    background-color: #eaeef3;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    height: 570px;
+    width: 320px;
+    border-radius: 12px;
+}
+
+.image {
+    padding: 12px;
+}
+
+.image img {
+    border-radius: 12px;
+}
+
+.capsules{
+    padding: 10px;
+}
+
+.capsules span{
+    border: 1px solid black;
+    border-width: thin;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.content{
+    padding: 15px;
+}
