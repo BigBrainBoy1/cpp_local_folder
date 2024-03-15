@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body,
+html {
+    height: 100%;
+    background: #222222;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #232322;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#div1 {
+    background-color: #bdffe2;
+}
+
+/* top right bottom left */
+#div1 h3 {
+    padding: 0px 20px 0px 20px;
+}
+
+#div1 p {
+    padding: 0px 30px 30px 20px;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+a {
+    color: black;
+}
+
+#div2 p {
+    color: #AAAAAA;
+    text-align: center;
+}
+
+#div3 {
+    text-align: center;
+    color: #AAAAAA;
+}
+
+#div3 input:checked ~ .checkmark {
+    background-color: #008f24;
+  }

@@ -1,0 +1,55 @@
+#t1,
+th,
+td {
+    border-color: red;
+    border-style: inset;
+}
+
+#t2,
+th,
+td {
+    border-color: red;
+    border-style: outset;
+}
+
+#t3,
+th,
+td {
+    border-color: red;
+    border-style: ridge;
+}
+
+#t4,
+th,
+td {
+    border-color: red;
+    border-style: groove;
+}
+
+#t5,
+th,
+td {
+    border-color: red;
+    border-style: dashed;
+}
+
+#t6,
+th,
+td {
+    border-color: red;
+    border-style: dotted;
+}
+
+#t7,
+th,
+td {
+    border-color: red;
+    border-style: solid;
+}
+
+#t8,
+th,
+td {
+    border-color: red;
+    border-style: double;
+}

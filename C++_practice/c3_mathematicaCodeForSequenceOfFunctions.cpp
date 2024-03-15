@@ -6,9 +6,9 @@ using namespace std;
 
 int main()
 {
-    int xMaxN = 50;
-    float xMin = 0.0, xMax = 1.0;
-    string functionEquation = "(x^"; // while changing the function make sure to adjust it's range above
+    int xMaxN = 80;
+    float xMin = 0.0, xMax = 8.0;
+    string functionEquation = "((Sin[x])^"; // while changing the function make sure to adjust it's range above
     string plotEquationPart1 = "Show[", plotEquationPart2 = "", completePlotEquation = "";
     for (int i = 1; i < (xMaxN + 1); i++)
     {
