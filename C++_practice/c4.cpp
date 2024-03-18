@@ -1,45 +1,27 @@
 #include <iostream>
 #include <ctime>
 #include <time.h>
+#include <cstdlib>
 
 using namespace std;
 
-int randFunction()
+int randNumGenerator()
 {
-    int randNum = rand() % 3;
+    int randNum = (rand() % 6);
     return randNum;
-}
-
-void slotMachine()
-{
-    int numArr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-    const char *charArr = {"abcdefghi"};
-    const char *symbolsArr = {"!@#$%^&*?"};
-    cout << "|";
-    for (int i = 0; i < 3; i++)
-    {
-        cout << numArr[randFunction()] << "|";
-    }
-    cout << endl;
-    cout << endl;
-    cout << "|";
-    for (int i = 0; i < 3; i++)
-    {
-        cout << charArr[randFunction()] << "|";
-    }
-    cout << endl;
-    cout << endl;
-    cout << "|";
-    for (int i = 0; i < 3; i++)
-    {
-        cout << symbolsArr[randFunction()] << "|";
-    }
 }
 
 int main()
 {
     int age = 0;
-    int balance = 0, bet = 0;
+    int initBalance = 1000, deposit = 0, betAmount = 0, betLines = 0, totalAmount = 0;
+    const char *numArr = {"123123"};
+    int indexNumArr[3];
+    const char *charArr = {"abcabc"};
+    int indexCharArr[3];
+    const char *symbolsArr = {"!@#$%&"};
+    int indexSymbolsArr[3];
+    int randNum;
     string name = "";
     cout << "Welcome to this game!!" << endl;
     // cout << "Your name : ";
@@ -54,18 +36,90 @@ int main()
     // {
     //     cout << "You cannot proceed further!! " << name << endl;
     // }
-    // balance = 1000;
-    // cout << "You have " << balance << " balance" << endl;
+    // cout << "You have " << initBalance << " balance!!" << endl;
+    // cout << "You can deposit more amount to your balance!!" << endl;
+    // while (true)
+    // {
+    //     cout << "Deposit : ";
+    //     cin >> deposit;
+    //     if (deposit <= 50)
+    //     {
+    //         break;
+    //     }
+    //     else if (deposit > 50)
+    //     {
+    //         cout << "Too much deposit amount!!" << endl;
+    //         deposit = 0;
+    //     }
+    // }
+    // totalAmount = initBalance + deposit;
+    // cout << "You have " << (totalAmount) << " balance after deposit!!" << endl;
     // cout << "How much do you want to bet on??" << endl;
-    // if (bet <= balance)
+    // while (true)
     // {
-    //     cin >> bet;
-    //     cout << "Bet on " << bet;
+    //     cin >> betAmount;
+    //     if (betAmount <= totalAmount)
+    //     {
+    //         cout << "Betting on " << betAmount << endl;
+    //         break;
+    //     }
+    //     else if (betAmount > totalAmount)
+    //     {
+    //         cout << "Please enter valid amount!!" << endl;
+    //         betAmount = 0;
+    //     }
     // }
-    // else if (bet > balance)
+    // cout << "How many lines do you want to bet on??" << endl;
+    // while (true)
     // {
-    //     cout << "Please enter valid amount!!";
+    //     cin >> betLines;
+    //     if (betLines >= 1 && betLines <= 3)
+    //     {
+    //         cout << "Betting on " << betLines << " lines" << endl;
+    //         break;
+    //     }
+    //     else
+    //     {
+    //         cout << "Enter valid amount " << endl;
+    //         betLines = 0;
+    //     }
     // }
-    slotMachine();
+    srand(time(0));
+    for (int i = 0; i < 3; i++)
+    {
+        randNum = randNumGenerator();
+        cout << numArr[randNum] << " ";
+        indexNumArr[i] = numArr[randNum];
+    }
+    if ((indexNumArr[0] == indexNumArr[1]) && indexNumArr[1] == indexNumArr[2])
+    {
+        cout << "BOOYEAH" << endl;
+    }
+    else{
+        cout << endl;
+    }
+    for (int i = 0; i < 3; i++)
+    {
+        randNum = randNumGenerator();
+        cout << charArr[randNum] << " ";
+        indexCharArr[i] = charArr[randNum];
+    }
+    if ((indexCharArr[0] == indexCharArr[1]) && indexCharArr[1] == indexCharArr[2])
+    {
+        cout << "BOOYEAH" << endl;
+    }
+    else{
+        cout << endl;
+    }
+    for (int i = 0; i < 3; i++)
+    {
+        randNum = randNumGenerator();
+        cout << symbolsArr[randNum] << " ";
+        indexSymbolsArr[i] = symbolsArr[randNum];
+    }
+    if ((indexSymbolsArr[0] == indexSymbolsArr[1]) && indexSymbolsArr[1] == indexSymbolsArr[2])
+    {
+        cout << "BOOYEAH" << endl;
+    }
     return 0;
 }

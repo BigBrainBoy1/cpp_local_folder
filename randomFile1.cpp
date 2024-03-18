@@ -1,19 +1,17 @@
 #include <iostream>
-// #include <time.h>
 
 using namespace std;
 
-int randFunction()
+void func1()
 {
-    int randNum = rand() % 25;
-    return randNum;
+    for (int i = 0; i < 5; i++)
+    {
+        cout << i;
+    }
 }
 
 int main()
 {
-    for (int i = 0; i < 10; i++)
-    {
-        cout << randFunction() << endl;
-    }
+    func1();
     return 0;
 }
