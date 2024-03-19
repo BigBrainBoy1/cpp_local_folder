@@ -1,17 +1,22 @@
 #include <iostream>
+#include <thread>
+#include <chrono>
 
 using namespace std;
 
-void func1()
-{
-    for (int i = 0; i < 5; i++)
-    {
-        cout << i;
-    }
-}
-
 int main()
 {
-    func1();
+    cout << "Starting countdown 1" << endl;
+    for (int i = 5; i > 0; i--)
+    {
+        cout << i << endl;
+        this_thread::sleep_for(chrono::milliseconds(500));
+    }
+    cout << "Starting countdown 2" << endl;
+    for (int i = 5; i > 0; i--)
+    {
+        cout << i << endl;
+        this_thread::sleep_for(chrono::seconds(1));
+    }
     return 0;
 }
