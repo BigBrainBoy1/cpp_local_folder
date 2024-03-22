@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 #t1,
 th,
 td {
@@ -52,4 +57,20 @@ th,
 td {
     border-color: red;
     border-style: double;
+}
+
+.asd{
+    display: flex;
+}
+
+.qwe{
+    margin: 10px;
+}
+
+.xyz{
+    margin: 10px;
+}
+
+.pqr{
+    display: flex;
 }

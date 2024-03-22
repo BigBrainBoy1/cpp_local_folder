@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    border: 2px solid black;
+}
+
+#div1 {
+    background-color: aquamarine;
+    font-size: 25px;
+    text-align: center;
+}
+
+#div2 {
+    background-color: aqua;
+    padding: 20px;
+    text-align: center;
+}
+
+#div3 {
+    background-color: #88ccfc;
+    color: green;
+    text-align: center;
+}
+
+#div5 {
+    background-color: blue;
+}
