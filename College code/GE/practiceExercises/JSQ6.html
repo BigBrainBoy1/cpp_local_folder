@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Q6</title>
+    <script>
+        function countNumbers() {
+            const inputString = document.getElementById("numbers").value;
+            const numbers = inputString.split(",").map(Number);
+            let negativeCount = 0;
+            let zeroCount = 0;
+            let positiveCount = 0;
+            for (const number of numbers) {
+                if (number < 0) {
+                    negativeCount++;
+                } else if (number === 0) {
+                    zeroCount++;
+                } else {
+                    positiveCount++;
+                }
+            }
+            const resultDiv = document.getElementById("result");
+            resultDiv.innerHTML = `You entered ${negativeCount + zeroCount + positiveCount} numbers <br> Negative numbers: ${negativeCount} <br> Zeros: ${zeroCount} <br> Positive numbers: ${positiveCount}`;
+        }
+
+    </script>
+</head>
+
+<body>
+    <p>Enter n numbers (separated by commas):</p>
+    <input type="text" id="numbers">
+    <button onclick="countNumbers()">Count</button>
+    <br>
+    <div id="result"></div>
+</body>
+
+</html>

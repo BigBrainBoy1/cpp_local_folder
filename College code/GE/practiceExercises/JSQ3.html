@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Q3</title>
+</head>
+
+<body>
+    <center>
+        <h1>Factorial of a number</h1>
+        <hr>
+        <h3>Enter the number whose factorial you want to compute</h3>
+        <label for="num">Number (n) : </label>
+        <input type="number" name="num" id="num">
+        <br>
+        <br>
+        <button onclick="factOfNum()">Find factorial</button>
+        <br>
+        <br>
+        <p>Factorial (n!) : </p><div id="fact"></div>
+    </center>
+    <script>
+        function factOfNum() {
+            let num = parseInt(document.getElementById("num").value);
+            let fact = 1;
+            if (num = 0) {
+                fact = 1;
+            }
+            else {
+
+                for (let i = 1; i <= num; i++) {
+                    fact = fact * i;
+                }
+            }
+            const outputValue = document.getElementById("fact");
+            outputValue.innerHTML = fact;
+        }
+    </script>
+</body>
+
+</html>
