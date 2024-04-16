@@ -17,13 +17,14 @@
         <button onclick="factOfNum()">Find factorial</button>
         <br>
         <br>
-        <p>Factorial (n!) : </p><div id="fact"></div>
+        <p>Factorial (n!) : </p>
+        <div id="fact"></div>
     </center>
     <script>
         function factOfNum() {
             let num = parseInt(document.getElementById("num").value);
             let fact = 1;
-            if (num = 0) {
+            if (num == 0) {
                 fact = 1;
             }
             else {

@@ -13,18 +13,18 @@
     <input type="number" name="years" id="years">
     <button onclick="amount()">Calculate</button>
     <br>
-    <div id="amount"></div>
+    <div id="result"></div>
     <script>
         function amount() {
-            let principalAmount = 1000, interestRate = 5;
-            let noOfYears = parseInt(document.getElementById("years").value);
-            let outputText = ""
-            for (let i = 1; i <= noOfYears; i++) {
-                let Amount = principalAmount + ((principalAmount * interestRate * i) / 100);
+            principalAmount = 1000, interestRate = 5;
+            noOfYears = parseInt(document.getElementById("years").value);
+            outputText = ""
+            for (i = 1; i <= noOfYears; i++) {
+                Amount = principalAmount + ((principalAmount * interestRate * i) / 100);
                 outputText += `Total amount in account after ${i} year(s) is Rs. ${Amount}` + "<br>";
             }
-            const output = document.getElementById("amount");
-            output.innerHTML = outputText;
+            const outputElement = document.getElementById("result");
+            outputElement.innerHTML = outputText;
         }
     </script>
 </body>

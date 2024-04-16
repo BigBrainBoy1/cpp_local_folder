@@ -6,7 +6,28 @@
 </head>
 
 <body>
-    <script></script>
+    <h1>Sum and average entered by the user</h1>
+    <label for="num">Enter numbers separated by commas : </label>
+    <input type="text" name="num" id="num">
+    <br>
+    <button onclick="func1()">Calculate</button>
+    <div id="result"></div>
+    <script>
+        function func1() {
+            const str1 = document.getElementById("num").value;
+            const numArr = str1.split(",").map(Number);
+            sum = 0;
+            totalNum = 0;
+            for (i = 0; i < (numArr.length); i++) {
+                totalNum++;
+                sum += numArr[i];
+            }
+            avg = sum / totalNum;
+            outputStr = `You entered ${totalNum} numbers. The sum is ${sum} and average is ${avg}.`;
+            outputElement = document.getElementById("result");
+            outputElement.innerHTML = outputStr;
+        }
+    </script>
 </body>
 
 </html>
