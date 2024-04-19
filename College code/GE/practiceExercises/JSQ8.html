@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Q8</title>
+</head>
+
+<body>
+    <h1>In-built mathematical functions using HTML and JS</h1>
+    <div>
+        <label for="num1">Enter first number : </label>
+        <input type="number" name="num1" id="num1">
+    </div>
+    <button onclick="func1()">+</button>
+    <button onclick="func2()">-</button>
+    <button onclick="func3()">*</button>
+    <button onclick="func4()">/</button>
+    <div>
+        <label for="num2">Enter second number : </label>
+        <input type="number" name="num2" id="num2">
+    </div>
+    <div id="result"></div>
+</body>
+<script>
+    function func1() {
+        num1 = parseFloat(document.getElementById("num1").value);
+        num2 = parseFloat(document.getElementById("num2").value);
+        sum = num1 + num2;
+        outputElement = document.getElementById("result");
+        outputElement.innerHTML = `${num1} + ${num2} = ${sum}`;
+    }
+    function func2() {
+        num1 = parseFloat(document.getElementById("num1").value);
+        num2 = parseFloat(document.getElementById("num2").value);
+        diff = num1 - num2;
+        outputElement = document.getElementById("result");
+        outputElement.innerHTML = `${num1} - ${num2} = ${diff}`;
+    }
+    function func3() {
+        num1 = parseFloat(document.getElementById("num1").value);
+        num2 = parseFloat(document.getElementById("num2").value);
+        prod = num1 * num2;
+        outputElement = document.getElementById("result");
+        outputElement.innerHTML = `${num1} * ${num2} = ${prod}`;
+    }
+    function func4() {
+        num1 = parseFloat(document.getElementById("num1").value);
+        num2 = parseFloat(document.getElementById("num2").value);
+        quotient = num1 / num2;
+        outputElement = document.getElementById("result");
+        outputElement.innerHTML = `${num1} / ${num2} = ${quotient}`;
+    }    
+</script>
+
+</html>
