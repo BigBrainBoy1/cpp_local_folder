@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Q1</title>
+</head>
+
+<body>
+    <p id="p1">
+        Click here to change the text color to red
+    </p>
+    <p id="p2">
+        Content before clicking
+    </p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#p1").click(function () {
+                $(this).css("color", "red");
+            })
+            $("#p2").click(function () {
+                $(this).text("Content after clicking");
+            })
+        })
+    </script>
+</body>
+
+</html>
