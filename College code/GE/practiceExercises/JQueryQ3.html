@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Q3</title>
+</head>
+
+<body>
+    <label for="date">Choose date : </label>
+    <input type="date" name="date" id="date">
+    <div id="result">Click here to check whether the date is a weekend or not!!</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#result").click(function () {
+                const date = new Date(document.getElementById("date").value);
+                if (((date.getDay()) === 0) || ((date.getDay()) === 6)) {
+                    outputStr = `It is a weekend!`;
+                }
+                else {
+                    outputStr = `It's not a weekend!`;
+                }
+                outputElement = document.getElementById("result");
+                outputElement.innerHTML = outputStr;
+            })
+        })
+    </script>
+</body>
+
+</html>
