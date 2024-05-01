@@ -6,8 +6,24 @@
 </head>
 
 <body>
+    <h2>Selecting elements using different methods</h2>
+    <p id="a1">Selecting this element using id selector</p>
+    <p class="b2">Selecting this element using class selector</p>
+    <span>Selecting this element using element name</span>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script></script>
+    <script>
+        $(document).ready(function () {
+            $("#a1").click(function () {
+                $(this).text("This element has been selected!!");
+            })
+            $(".b2").click(function () {
+                $(this).text("This element has been selected!!");
+            })
+            $("span").click(function () {
+                $(this).text("This element has been selected!!");
+            })
+        })
+    </script>
 </body>
 
 </html>

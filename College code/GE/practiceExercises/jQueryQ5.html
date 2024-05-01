@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Q5</title>
+</head>
+
+<body>
+    <h2>mouseOver and mouseOut events</h2>
+    <a href="https://aryabhattacollege.ac.in/" target="_blank" id="mouseEvents">It shows the mouse events</a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#mouseEvents").mouseover(function () {
+                $(this).css("background-color", "green");
+                $(this).text("I'm green now");
+            })
+            $("#mouseEvents").mouseout(function () {
+                $(this).css("background-color", "red");
+                $(this).text("I'm red now");
+            })
+        })
+    </script>
+</body>
+
+</html>
